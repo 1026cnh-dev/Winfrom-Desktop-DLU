@@ -1,0 +1,10 @@
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\bin\Debug\Bai2.exe.config
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\bin\Debug\Bai2.exe
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\bin\Debug\Bai2.pdb
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\obj\Debug\Bai2.csproj.AssemblyReference.cache
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\obj\Debug\Bai2.Properties.Resources.resources
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\obj\Debug\Bai2.csproj.GenerateResource.cache
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\obj\Debug\Bai2.csproj.CoreCompileInputs.cache
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\obj\Debug\Bai2.exe
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\obj\Debug\Bai2.pdb
+C:\Users\NguyenPhuc IT\Downloads\CTK48B_2411901_NguyenHuuPhuc\CTK48B_2411901_NguyenHuuPhuc\BaiThucHanhBuoi01\Bai2\obj\Debug\Bai2.MainForm.resources
