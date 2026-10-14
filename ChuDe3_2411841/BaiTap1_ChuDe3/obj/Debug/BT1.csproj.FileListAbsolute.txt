@@ -1,0 +1,11 @@
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\bin\Debug\students.txt
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\bin\Debug\students.xml
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\bin\Debug\students.json
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\bin\Debug\courses.txt
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\bin\Debug\BT1.exe.config
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\bin\Debug\BT1.exe
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\bin\Debug\BT1.pdb
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\obj\Debug\BT1.csproj.AssemblyReference.cache
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\obj\Debug\BT1.csproj.CoreCompileInputs.cache
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\obj\Debug\BT1.exe
+C:\Users\1026c\Downloads\ChuDe3_BT1_SearchForm_theo_anh\ChuDe3\BT1\obj\Debug\BT1.pdb

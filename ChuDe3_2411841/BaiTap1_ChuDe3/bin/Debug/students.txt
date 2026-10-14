@@ -1,0 +1,4 @@
+2410001	Nguyễn Văn	An	1	15/02/2006	CTK48	123456789	0901234567	Đà Lạt	Mạng máy tính|Hệ điều hành
+2410002	Trần Thị	Hoa	0	20/07/2006	CTK48	234567890	0912345678	Hà Nội	Lập trình CSDL|Lập trình mạng
+2510001	Lê Minh	Bình	1	10/11/2007	CTK49	345678901	0987654321	TP. Hồ Chí Minh	Đồ án cơ sở|Phương pháp NCKH
+

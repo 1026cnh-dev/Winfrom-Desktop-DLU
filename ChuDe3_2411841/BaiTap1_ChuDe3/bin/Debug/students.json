@@ -1,0 +1,62 @@
+[
+  {
+    "MSSV": "2410001",
+    "HoVaTenLot": "Nguyễn Văn",
+    "Ten": "An",
+    "Nam": true,
+    "NgaySinh": "2006-02-15",
+    "Lop": "CTK48",
+    "CMND": "123456789",
+    "DienThoai": "0901234567",
+    "DiaChi": "Đà Lạt",
+    "MonHoc": [
+      "Mạng máy tính",
+      "Hệ điều hành"
+    ]
+  },
+  {
+    "MSSV": "2410002",
+    "HoVaTenLot": "Trần Thị",
+    "Ten": "Hoa",
+    "Nam": false,
+    "NgaySinh": "2006-07-20",
+    "Lop": "CTK48",
+    "CMND": "234567890",
+    "DienThoai": "0912345678",
+    "DiaChi": "Hà Nội",
+    "MonHoc": [
+      "Lập trình CSDL",
+      "Lập trình mạng"
+    ]
+  },
+  {
+    "MSSV": "2510001",
+    "HoVaTenLot": "Lê Minh",
+    "Ten": "Bình",
+    "Nam": true,
+    "NgaySinh": "2007-11-10",
+    "Lop": "CTK49",
+    "CMND": "345678901",
+    "DienThoai": "0987654321",
+    "DiaChi": "TP. Hồ Chí Minh",
+    "MonHoc": [
+      "Đồ án cơ sở",
+      "Phương pháp NCKH"
+    ]
+  },
+  {
+    "MSSV": "2610001",
+    "HoVaTenLot": "Phạm Thị",
+    "Ten": "Lan",
+    "Nam": false,
+    "NgaySinh": "2008-03-05",
+    "Lop": "CTK50",
+    "CMND": "456789012",
+    "DienThoai": "0934567890",
+    "DiaChi": "Đà Lạt",
+    "MonHoc": [
+      "Mạng máy tính",
+      "Lập trình CSDL"
+    ]
+  }
+]

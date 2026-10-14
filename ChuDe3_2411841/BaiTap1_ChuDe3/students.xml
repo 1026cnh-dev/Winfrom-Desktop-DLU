@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ArrayOfStudent>
+  <Student>
+    <MSSV>2410001</MSSV>
+    <HoVaTenLot>Nguyễn Văn</HoVaTenLot>
+    <Ten>An</Ten>
+    <Nam>true</Nam>
+    <NgaySinh>2006-02-15T00:00:00</NgaySinh>
+    <Lop>CTK48</Lop>
+    <CMND>123456789</CMND>
+    <DienThoai>0901234567</DienThoai>
+    <DiaChi>Đà Lạt</DiaChi>
+    <MonHoc>
+      <string>Mạng máy tính</string>
+      <string>Hệ điều hành</string>
+    </MonHoc>
+  </Student>
+  <Student>
+    <MSSV>2410002</MSSV>
+    <HoVaTenLot>Trần Thị</HoVaTenLot>
+    <Ten>Hoa</Ten>
+    <Nam>false</Nam>
+    <NgaySinh>2006-07-20T00:00:00</NgaySinh>
+    <Lop>CTK48</Lop>
+    <CMND>234567890</CMND>
+    <DienThoai>0912345678</DienThoai>
+    <DiaChi>Hà Nội</DiaChi>
+    <MonHoc>
+      <string>Lập trình CSDL</string>
+      <string>Lập trình mạng</string>
+    </MonHoc>
+  </Student>
+  <Student>
+    <MSSV>2510001</MSSV>
+    <HoVaTenLot>Lê Minh</HoVaTenLot>
+    <Ten>Bình</Ten>
+    <Nam>true</Nam>
+    <NgaySinh>2007-11-10T00:00:00</NgaySinh>
+    <Lop>CTK49</Lop>
+    <CMND>345678901</CMND>
+    <DienThoai>0987654321</DienThoai>
+    <DiaChi>TP. Hồ Chí Minh</DiaChi>
+    <MonHoc>
+      <string>Đồ án cơ sở</string>
+      <string>Phương pháp NCKH</string>
+    </MonHoc>
+  </Student>
+  <Student>
+    <MSSV>2610001</MSSV>
+    <HoVaTenLot>Phạm Thị</HoVaTenLot>
+    <Ten>Lan</Ten>
+    <Nam>false</Nam>
+    <NgaySinh>2008-03-05T00:00:00</NgaySinh>
+    <Lop>CTK50</Lop>
+    <CMND>456789012</CMND>
+    <DienThoai>0934567890</DienThoai>
+    <DiaChi>Đà Lạt</DiaChi>
+    <MonHoc>
+      <string>Mạng máy tính</string>
+      <string>Lập trình CSDL</string>
+    </MonHoc>
+  </Student>
+</ArrayOfStudent>

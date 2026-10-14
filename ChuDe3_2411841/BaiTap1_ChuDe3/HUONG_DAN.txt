@@ -1,0 +1,91 @@
+BT1 - BẢN CODE DỄ ĐỌC, GIỮ CÁC FILE RIÊNG
+
+CÁCH CHẠY
+1. Giải nén vào một thư mục mới trên Windows.
+2. Mở ChuDe3/BT1/BT1.sln bằng Visual Studio.
+3. Cần workload .NET desktop development và targeting pack .NET Framework 4.7.2.
+4. Chọn Build > Rebuild Solution, sau đó nhấn F5.
+
+CẤU TRÚC
+- Program.cs: khởi động chương trình.
+- Form1.Designer.cs: giao diện, các control và sự kiện; có thể chỉnh bằng Designer.
+- Form1.cs: lấy dữ liệu trên form, xử lý thêm/sửa/xóa, chọn sinh viên, quản lý môn và các menu.
+- Student.cs: thông tin sinh viên, kiểm tra dữ liệu và suy ra năm nhập học.
+- StudentManager.cs: quản lý danh sách, tìm kiếm, lưu thay đổi.
+- StudentStorage.cs: đọc/ghi TXT, XML, JSON và ghi file an toàn.
+- SearchForm.cs: nạp điều kiện cũ, kiểm tra ô nhập và trả bộ lọc hợp lệ.
+- SearchForm.Designer.cs: giao diện tìm kiếm, ErrorProvider, Enter/Esc và gợi ý.
+- SearchCriteria.cs: dữ liệu và phép so sánh của bộ lọc; độc lập với hộp thoại.
+
+Mỗi hàm có ghi chú tiếng Việt ở phía trên. Code chia thành các bước rõ ràng, tránh nhiều câu lệnh chen trên một dòng. Không cần cài thêm NuGet cho BT1. Các bài khác trong ChuDe3 được giữ nguyên mã nguồn.
+
+CHỨC NĂNG
+- Nhập đủ MSSV, họ/tên lót, tên, giới tính, ngày sinh, lớp, CMND, điện thoại, địa chỉ và ít nhất một môn; bấm Thêm mới để ghi file ngay.
+- Chọn một dòng để tự điền thông tin; sửa rồi bấm Cập nhật. Đổi MSSV vẫn cập nhật đúng người, không cho trùng MSSV.
+- Đánh dấu checkbox và nhấp chuột phải để xóa một/nhiều sinh viên. Nếu không có checkbox thì dùng dòng đang chọn.
+- Nhấp chuột phải trong vùng môn để thêm; trỏ vào môn để xóa môn chưa được sinh viên đăng ký.
+- Tìm theo một/nhiều điều kiện AND/OR. Ô trống bỏ qua; ngày sinh dùng khi chọn checkbox. Không chọn điều kiện nào rồi bấm Tìm kiếm để xem toàn bộ.
+- Tập tin > Mở hoặc Lưu thành để dùng TXT/XML/JSON. File đang dùng hiện ở cuối form và được nhớ cho lần chạy sau.
+- Nút Thoát và nút X đều hỏi xác nhận.
+
+DỮ LIỆU
+- CTK50 là niên khóa 2026-2027, năm nhập học 2026; MSSV dạng 2610CCC.
+- CTK48 -> 2024 -> 2410CCC; CTK49 -> 2025 -> 2510CCC. Hỗ trợ CTK50A và CNTT2026.
+- MSSV 7 số, CMND 9 số, điện thoại 10 số; giữ số 0 ở đầu.
+- Có 4 sinh viên mẫu giống nhau trong students.txt, students.xml, students.json.
+- TXT: UTF-8, 10 cột cách bằng tab; môn cách bằng |. Ký tự đặc biệt được mã hóa để đọc lại đúng.
+- XML: danh sách Student, giữ nguyên ký tự xuống dòng.
+- JSON mới: ngày sinh yyyy-MM-dd, tránh lệch ngày khi đổi múi giờ. Vẫn đọc JSON cũ có /Date(...)/; định dạng cũ được hiểu theo múi giờ của máy đọc.
+- Chạy từ bin/Debug hoặc bin/Release: mặc định dùng file ở thư mục BT1. EXE triển khai riêng dùng file cạnh EXE.
+- Mở định dạng nào thì lưu vào file đó; dùng Lưu thành để xuất định dạng khác.
+
+CÁC ĐIỂM ĐÃ SỬA
+- Mở file bị mất không còn thay danh sách đang dùng thành rỗng.
+- Bộ lọc không giữ tham chiếu tới hộp thoại đã đóng.
+- Bản ghi và danh sách môn được sao chép, tránh sửa ngoài ý muốn khi chưa lưu.
+- Lỗi courses.txt/lastFile.txt không ngăn tải dữ liệu sinh viên hợp lệ.
+- Bảng luôn kết thúc cập nhật bằng EndUpdate trong finally.
+- JSON giữ ngày sinh dạng ngày, đồng thời hỗ trợ đọc định dạng cũ.
+- Ghi file tạm trước rồi thay file đích; thất bại giữ danh sách và file cũ.
+
+KIỂM TRA
+- Tất cả file C# biên dịch thành công với tham chiếu .NET Framework 4.7.2.
+- 118 kiểm tra nghiệp vụ trên các file code thực tế: TXT/XML/JSON, Unicode, ký tự đặc biệt, số 0 đầu, thêm/sửa/xóa, chống trùng, tìm kiếm và các lỗi đọc/ghi.
+- Kiểm tra ngày JSON ở múi giờ Asia/Ho_Chi_Minh và America/Los_Angeles.
+- Kiểm tra constructor khởi tạo Designer, các sự kiện, entry point và cấu trúc project.
+- Chưa chạy giao diện Windows Forms trên Windows; các kiểm tra nghiệp vụ chạy trên .NET 8 trong macOS.
+
+SEARCHFORM ĐÃ HOÀN THIỆN
+- Nhấn Tìm kiếm trên form chính sẽ mở SearchForm; lần mở tiếp theo điền lại bộ lọc đang dùng.
+- Mỗi ô có tên riêng; giao diện nằm trong SearchForm.Designer.cs, xử lý nằm trong SearchForm.cs.
+- MSSV cho nhập 1-7 số; CMND 1-9 số; điện thoại 1-10 số để tìm theo một phần. Để trống ô không dùng.
+- Điện thoại nhận định dạng có dấu gạch, khoảng trắng, chấm hoặc ngoặc, như 093-456-7890.
+- Nhập sai thì hiện lỗi ngay bên cạnh ô và giữ hộp thoại mở để sửa; không thay bộ lọc đang dùng.
+- Bấm Enter để tìm; Esc, Hủy hoặc đóng cửa sổ không thay điều kiện hiện tại.
+- Chọn AND để thỏa tất cả điều kiện; OR để thỏa ít nhất một điều kiện, kể cả các môn được đánh dấu.
+- Không dùng điều kiện nào thì xem toàn bộ; không thêm lại nút Hiện tất cả trên form chính.
+- Ngày sinh chỉ dùng khi đánh dấu ô vuông cạnh ngày. Bỏ dấu để bỏ điều kiện ngày.
+- Nếu không có kết quả, bảng hiện 0 dòng và chương trình báo để sửa điều kiện; file và danh sách gốc được giữ nguyên.
+- Môn null, môn trống và trùng tên không làm lỗi bộ lọc. Danh mục môn được kiểm tra và loại trùng khi mở hộp thoại.
+- Hộp thoại có thể cuộn khi màn hình nhỏ hoặc mức phóng to làm giao diện vượt chiều cao màn hình.
+
+THỬ VỚI DỮ LIỆU MẪU
+1. MSSV 2410 và lớp CTK48, chọn AND: 2 kết quả.
+2. Tên Hoa hoặc lớp CTK50, chọn OR: 2 kết quả.
+3. Điện thoại 093-456-7890: sinh viên Phạm Thị Lan.
+4. Họ/tên lót nguyen hoặc địa chỉ da lat: tìm được chữ có dấu tương ứng.
+5. Nhập MSSV abc: thông báo lỗi, hộp thoại vẫn mở.
+6. Mở lại sau một lần tìm: điều kiện cũ vẫn có. Sửa rồi Hủy: kết quả cũ vẫn giữ nguyên.
+7. Để trống các ô, giới tính Không dùng, bỏ checkbox ngày và môn: toàn bộ danh sách được hiển thị.
+
+Bản này đã biên dịch thành công với tham chiếu .NET Framework 4.7.2 và chạy 118 kiểm tra nghiệp vụ trên .NET 8/macOS. Giao diện, thao tác chuột và Designer chưa chạy trực tiếp trên Windows; cần dùng Visual Studio để thử các bước ở trên.
+
+GIAO DIỆN SEARCHFORM THEO ẢNH
+- Hai cột: MSSV / Lớp; Họ và tên lót / Tên; CMND / Điện thoại.
+- Địa chỉ trải ngang; giới tính và ngày sinh nằm cùng hàng bên dưới.
+- Môn đăng ký là danh sách checkbox ở phần giữa.
+- Nhóm Ghép các điều kiện và hai lựa chọn Tất cả điều kiện / Ít nhất một điều kiện ở phía dưới, không cắt chữ.
+- Hai nút Tìm và Hủy ở góc dưới bên phải.
+- Ngày hiển thị mặc định là hôm nay; checkbox ngày vẫn chỉ bật khi người dùng chọn điều kiện đó.
+- Giữ cấu trúc file riêng và các kiểm tra tìm kiếm đã có; không thêm nút Hiện tất cả.
+- Đã kiểm tra vị trí control và biên dịch lại thành công. Chưa chạy giao diện trên Windows.
